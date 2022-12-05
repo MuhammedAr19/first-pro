@@ -1,0 +1,318 @@
+/*--start for site just*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --main-color: #1F2122;
+    --white-color: white;
+    --main-font: 'Ubuntu', sans-serif;
+}
+
+.display {
+    display: inline-block !important;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.flex-center-x {
+    justify-content: center;
+}
+
+/*--end for site just*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    background-color: var(--main-color);
+}
+
+/*header*/
+header {
+    padding: 15px;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.search-box {
+    padding: 10px 15px;
+    background-color: #27292A;
+    color: #3A3B3C !important;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.searchi {
+    margin-right: 5px;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 30px;
+}
+
+/*header*/
+/*start nav*/
+#nav {
+    background-color: rgba(78, 52, 85, 0.3);
+    color: #666;
+    position: sticky;
+    list-style: none;
+    padding: 10px;
+}
+
+#nav li {
+    padding: 10px;
+    font-size: 19px;
+    transition: color 0.5s ease-in-out;
+}
+
+#nav li:hover {
+    color: #D55883;
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+
+}
+
+#diff1 {
+    color: #D55883;
+}
+
+#diff {
+    border-radius: 49px;
+    transition: all 0.3s ease-in-out !important;
+    background-color: #223d4b;
+
+}
+
+#diff img {
+    border-radius: 50%;
+}
+
+#diff a {
+    text-decoration: none;
+    color: #666;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#diff:hover {
+    background-color: var(--white-color);
+
+}
+
+/*end nav*/
+/* start main*/
+main {
+    border-radius: 30px;
+    margin: 30px auto !important;
+    background-color: #27292A;
+    padding: 30px 0;
+}
+
+/* start header main*/
+#header {
+    background-image: url("../pics/banner-bg.jpg");
+    background-size: cover;
+    width: 90%;
+    border-radius: 30px;
+    padding: 40px 35px;
+    margin: auto;
+}
+
+#header .p-header {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.p-header2 {
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 120%;
+    margin: 50px 0 100px;
+}
+
+#word-header {
+    color: #D55883
+}
+
+#header-button {
+    color: var(--white-color);
+    background-color: #D55883;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 35px;
+    font-size: 1rem;
+}
+
+/* end header main*/
+/* start gallary*/
+#gallary-of-all {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 55px;
+    background-color: #1F2122;
+    padding: 35px;
+    border-radius: 30px;
+    position: relative;
+}
+
+#gallary {
+    flex-wrap: wrap;
+}
+
+#title-for-gallary {
+    font-size: 2rem;
+    color: #D55883;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#title-for-gallary #under-line {
+    text-decoration: underline;
+    color: var(--white-color);
+}
+
+.articale-gallary {
+    background-color: #27292A;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    width: calc(25% - 10px);
+}
+
+.articale-gallary img {
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#title-artical1,
+#title-artical2 {
+    overflow: hidden;
+}
+
+#title-artical1 {
+    margin-bottom: 10px;
+}
+
+.left-t {
+    float: left;
+}
+
+.right-t {
+    float: right;
+}
+
+.left-t {
+    color: var(--white-color);
+    font-weight: 400;
+}
+
+#title-artical1 i,
+#title-artical2 i {
+    font-size: 17px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+#title-artical1 i {
+    color: #FBEF3C;
+}
+
+#title-artical2 i {
+    color: #D55883;
+}
+
+.num {
+    font-weight: 300;
+    font-size: 17px;
+    color: var(--white-color);
+}
+
+#discover {
+    color: var(--white-color);
+    font-weight: 400;
+    background-color: #D55883;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -23.5px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+/* end gallary*/
+#library {
+    width: 90%;
+    margin: auto;
+    background-color: #1F2122;
+    padding: 35px;
+    border-radius: 30px;
+}
+.downloaded{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #3E3F3F;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.downloaded span{
+    display:block;
+}
+.downloaded img{
+    border-radius: 15px;
+}
+.name-game .name{
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.name-game .name2{
+    font-weight: 300;
+    color: #3E3F3F;
+}
+.down{
+    color:#3E3F3F;
+    
+    border: 1px solid #3E3F3F;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 400;
+}
+.title-for-library{
+    margin-bottom: 40px !important;
+}
+/* end main*/
+/*footer*/
+.f1{
+    margin:30px 0 10px 0;
+    text-align:center;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color:#9C9D9D;
+
+}
+.f1 span{
+    color: #D55883;
+}
+/*footer*/
